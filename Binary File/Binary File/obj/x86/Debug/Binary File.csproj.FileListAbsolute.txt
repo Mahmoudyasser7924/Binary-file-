@@ -1,0 +1,19 @@
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\obj\x86\Debug\Binary_File.Form1.resources
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\obj\x86\Debug\Binary_File.Properties.Resources.resources
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\obj\x86\Debug\Binary File.csproj.GenerateResource.Cache
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\bin\Debug\Binary File.exe
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\bin\Debug\Binary File.pdb
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\obj\x86\Debug\Binary File.exe
+c:\users\20102\documents\visual studio 2010\Projects\Binary File\Binary File\obj\x86\Debug\Binary File.pdb
+C:\Users\20102\Documents\Visual Studio 2010\Projects\Binary File\Binary File\obj\x86\Debug\Binary File.csprojResolveAssemblyReference.cache
+F:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.exe
+F:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.pdb
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\bin\Debug\Binary File.exe
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\bin\Debug\Binary File.pdb
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.csproj.AssemblyReference.cache
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary_File.Form1.resources
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary_File.Properties.Resources.resources
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.csproj.GenerateResource.cache
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.csproj.CoreCompileInputs.cache
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.exe
+D:\Studing\CS\CS 3\symester 2\File Organization\Others\Project\Binary File\Binary File\obj\x86\Debug\Binary File.pdb

@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.IO;//contain classes like(Stream reader,stream writer,file.)
+namespace Binary_File
+{
+    public partial class Form1 : Form
+    {
+        public string filename = "";
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+
+        private void Creat_Click(object sender, EventArgs e)
+        {
+            filename ="F:\\Every thing\\" + FilenametextBox.Text + ".txt";
+            if(!File.Exists(filename))
+            {
+                File.Create(filename).Close();
+                MessageBox.Show("File is created successfuly");
+                errorlabel.Visible = false;
+            }
+            else
+            errorlabel.Visible=true;
+            FilenametextBox.Clear();
+        }
+
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            filename = "F:\\Every thing\\" + FilenametextBox.Text + ".txt";
+            File.Delete(filename);
+            MessageBox.Show("File is deleted");
+            FilenametextBox.Clear();
+            errorlabel.Visible = false;
+        }
+
+
+        private void Savebtn_Click(object sender, EventArgs e)
+        {
+            BinaryWriter bw = new BinaryWriter(File.Open(filename, FileMode.Open, FileAccess.Write));//BinaryWriter ->is class of IO Library
+            int length = (int)bw.BaseStream.Length;//BaseStream.Length-> perform save on file then it contain any thing
+            if (length != 0)
+            {
+                bw.BaseStream.Seek(length, SeekOrigin.Begin);// BaseStream.Seek->to move on file - SeekOrigin.Begin-> هيبتدى يقرا الفايل من الاول للاخر وبعديب يبتدى يسيف من الاخر
+            }
+            bw.Write(int.Parse(IDtxtBox.Text)); //Id
+
+            bw.Write(int.Parse(BirthDatetxtBox.Text));//Birth
+
+            name1txtBox.Text = name1txtBox.Text.PadRight(10);
+            bw.Write(name1txtBox.Text.Substring(0, 8));//first name
+
+            name2txtBox.Text = name2txtBox.Text.PadRight(10);
+            bw.Write(name2txtBox.Text.Substring(0, 8));//Second name
+
+            textBox2.Text = textBox2.Text.PadRight(11);
+            bw.Write(textBox2.Text.Substring(0, 11));//Phone
+
+            bw.Write(GendertxtBox.Text.Substring(0, 1));//Gender
+
+            IDtxtBox.Text = BirthDatetxtBox.Text = name1txtBox.Text = name2txtBox.Text = textBox2.Text = GendertxtBox.Text;
+            MessageBox.Show("Data is Saved Soccessfuly");
+            bw.Close();
+        }
+
+        private void displaybtn_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openfiledialog = new OpenFileDialog();
+            if (openfiledialog.ShowDialog() == DialogResult.OK)
+            {
+                String text = File.ReadAllText(openfiledialog.FileName);
+                richTextBox1.Text = text;
+            }
+
+        }
+        
+    }
+}
